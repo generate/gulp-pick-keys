@@ -1,7 +1,7 @@
 {
   "name": "gulp-pick-keys",
   "description": "Prompts the user to pick the properties to include in a JSON file. Useful in project generators for selectively including keys in generated files.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/generate/gulp-pick-keys",
   "author": "Brian Woodward (https://github.com/doowb)",
   "repository": "generate/gulp-pick-keys",
