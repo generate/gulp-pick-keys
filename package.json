@@ -36,9 +36,9 @@
   "keywords": [
     "gulp",
     "gulpplugin",
-    "plugin",
     "keys",
-    "pick"
+    "pick",
+    "plugin"
   ],
   "verb": {
     "toc": false,
