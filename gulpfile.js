@@ -1,16 +1,10 @@
-## Usage
+'use strict';
 
-```js
 var gulp = require('gulp');
-var pick = require('{%= name %}');
+var pick = require('./');
 
 gulp.task('default', function() {
   return gulp.src('fixtures/package.json')
     .pipe(pick())
     .pipe(gulp.dest('actual'));
 });
-```
-
-**Example**
-
-![gulp pick files example](demo.gif)

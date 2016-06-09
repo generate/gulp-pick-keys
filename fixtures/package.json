@@ -1,0 +1,18 @@
+{
+  "name": "<%= ask('name', 'Project name?') %>",
+  "private": true,
+  "description": "<%= ask('description', 'Project description?') %>",
+  "version": "<%= ask('version', 'Project version?') %>",
+  "homepage": "https://github.com/<%= ask(`author.username`, `Author's github username?`) %>/<%= ask('name') %>",
+  "author": "<%= ask('author.name', `Author's name?`) %> (<%= ask('author.url', `Author's URL?`) %>)",
+  "repository": "<%= ask('author.username') %>/<%= ask('name') %>",
+  "bugs": {
+    "url": "https://github.com/<%= ask('author.username') %>/<%= ask('name') %>/issues"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}

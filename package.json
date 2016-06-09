@@ -1,16 +1,17 @@
 {
   "name": "gulp-pick-keys",
-  "description": "Prompts the user to pick the properties to include in a JSON file.",
+  "description": "Prompts the user to pick the properties to include in a JSON file. Useful in project generators for selectively including keys in generated files.",
   "version": "0.1.0",
-  "homepage": "https://github.com/jonschlinkert/gulp-pick-keys",
-  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
-  "repository": "jonschlinkert/gulp-pick-keys",
+  "homepage": "https://github.com/generate/gulp-pick-keys",
+  "author": "Brian Woodward (https://github.com/doowb)",
+  "repository": "generate/gulp-pick-keys",
   "bugs": {
-    "url": "https://github.com/jonschlinkert/gulp-pick-keys/issues"
+    "url": "https://github.com/generate/gulp-pick-keys/issues"
   },
   "license": "MIT",
   "files": [
-    "index.js"
+    "index.js",
+    "utils.js"
   ],
   "main": "index.js",
   "engines": {
@@ -19,18 +20,41 @@
   "scripts": {
     "test": "mocha"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "gulp-format-md": "*",
-    "mocha": "*"
+  "dependencies": {
+    "extend-shallow": "^2.0.1",
+    "lazy-cache": "^2.0.1",
+    "log-utils": "^0.1.4",
+    "object.pick": "^1.1.2",
+    "question-cache": "^0.4.0",
+    "through2": "^2.0.1"
   },
-  "keywords": [],
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-format-md": "^0.1.9",
+    "mocha": "^2.5.3"
+  },
+  "keywords": [
+    "gulp",
+    "gulpplugin",
+    "plugin",
+    "keys",
+    "pick"
+  ],
   "verb": {
+    "toc": false,
     "layout": "default",
-    "plugins": ["gulp-format-md"],
-    "related": {
-      "list": []
-    },
-    "reflinks": ["verb"]
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "reflinks": [
+      "verb",
+      "verb-readme-generator"
+    ],
+    "lint": {
+      "reflinks": true
+    }
   }
 }
