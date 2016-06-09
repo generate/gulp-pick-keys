@@ -1,0 +1,36 @@
+{
+  "name": "gulp-pick-keys",
+  "description": "Prompts the user to pick the properties to include in a JSON file.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/gulp-pick-keys",
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/gulp-pick-keys",
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/gulp-pick-keys/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-format-md": "*",
+    "mocha": "*"
+  },
+  "keywords": [],
+  "verb": {
+    "layout": "default",
+    "plugins": ["gulp-format-md"],
+    "related": {
+      "list": []
+    },
+    "reflinks": ["verb"]
+  }
+}
